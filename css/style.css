@@ -240,6 +240,11 @@ footer {
     margin: 0 auto;
   }
 }
+@media(min-width: 767px){
+  .scroll__block .dots{
+  display: none;
+}
+}
 .scroll__block {
   position: absolute;
   left: 0;
@@ -255,7 +260,9 @@ footer {
   top: 50%;
   transform: translate(0, -50%);
 }
-
+.scroll__list-block .order-list {
+  position: relative;
+}
 .dots {
   position: absolute;
   bottom: 0;
@@ -1984,6 +1991,7 @@ box-shadow: 4px 2px 17px 3px rgba(25, 102, 160, 0.03), 3px 3px 10px rgba(0, 0, 0
   }
   .module-12 .order-list {
     display: flex;
+    position: relative;
   }
   .module-12 .order-list__item {
     min-width: 500px;
